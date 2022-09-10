@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(40, 27, 74);
+    position: fixed;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0px 1px 5px black;
+    z-index: 100;
+
+}

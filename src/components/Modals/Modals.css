@@ -1,0 +1,81 @@
+.contentPotrait{
+    display: none;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.contentLandScape{
+    object-fit: contain;
+    border-radius: 10px;
+}
+.tagLine{
+    padding-bottom: 10px;
+    align-self: center;
+}
+.Modal{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.Modal::-webkit-scrollbar{
+    display: none;
+}
+.contentDetails{
+    padding: 10px;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 300;
+
+}
+.ModalTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    height: 12%;
+}
+.overview{
+    display: flex;
+    height: 50%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: justify;
+    scrollbar-width: thin;
+    box-shadow: inset  0 0 5px black;
+}
+.overview::-webkit-scrollbar{
+    display: none;
+}
+@media (min-width:800px) {
+    .contentLandScape{
+        display: none;
+    }
+    .contentPotrait{
+        display: flex;
+        width: 40%;
+    }
+    .Modal{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .contentDetails{
+        padding: 0;
+        height: 100%; 
+         width: 50%;
+    }
+    .ModalTitle{
+        font-size: 3.5vw;
+    }
+    .overview{
+        font-size: 22px;
+    }
+}

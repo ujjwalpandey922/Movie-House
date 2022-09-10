@@ -1,0 +1,30 @@
+.media{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    padding: 5px ;margin: 5px 0;
+    background-color: rgb(5, 5, 10);
+    border-radius: 20px;
+    position: relative;
+    font-family: "Montserrat",sans-serif;
+}
+.media:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+@media (max-width:500px){
+    .media{
+        width: 50%;
+    }
+}
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+    padding: 8px 0 ;
+}
+.smallDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
