@@ -1,16 +1,15 @@
 import React from "react";
 import Pagination from "@mui/material/Pagination";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { dark } from "@mui/material/styles/createPalette";
 
 function PaginationComponent({ setPage, numberOfPages = 10 }) {
   const handleOnClick = (page) => {
     setPage(page);
     window.scroll(0, 0);
   };
-  const theme = createTheme({
+  const darkTheme = createTheme({
     palette: {
-      main: dark[500],
+      mode: "dark",
     },
   });
   return (
@@ -22,7 +21,7 @@ function PaginationComponent({ setPage, numberOfPages = 10 }) {
         marginTop: 10,
       }}
     >
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={darkTheme}>
         <Pagination
           count={numberOfPages}
           color="primary"
