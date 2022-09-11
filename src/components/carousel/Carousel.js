@@ -20,7 +20,7 @@ const Carousel = ({ media_type, id }) => {
   ));
   const responsive = {
     0: {
-      items: 3,
+      items: 0,
     },
     512: {
       items: 5,

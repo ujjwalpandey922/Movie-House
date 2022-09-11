@@ -16,10 +16,7 @@ function Search() {
   const [noOFPages, setNoOFPages] = useState();
   const darkTheme = createTheme({
     palette: {
-      type: "dark",
-      primary: {
-        main: "#fff",
-      },
+      mode: "dark",
     },
   });
   const fetchSearch = async () => {
@@ -45,7 +42,7 @@ function Search() {
           style={{ display: "flex", margin: "15px 0" }}
         >
           <TextField
-            style={{ flex: 1, backgroundColor: "white" }}
+            style={{ flex: 1, backgroundColor: "#81818d8f" }}
             className="searchBox"
             label="Search"
             variant="filled"

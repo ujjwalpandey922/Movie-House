@@ -20,6 +20,7 @@ https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_
     setNumberOfPages(data.total_pages);
   };
   useEffect(() => {
+    window.scroll(0, 0);
     fetchTrending();
     // eslint-disable-next-line
   }, [page, selectedGenres]);

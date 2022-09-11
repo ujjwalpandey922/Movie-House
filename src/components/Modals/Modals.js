@@ -50,9 +50,6 @@ export default function Modals({ children, media_type, id }) {
     );
     const data = await res.json();
     setVideo(data.results[0]?.key);
-    console.log("====================================");
-    console.log(video);
-    console.log("====================================");
   };
   React.useEffect(() => {
     fetchVideoData();

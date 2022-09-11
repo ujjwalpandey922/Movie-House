@@ -11,8 +11,12 @@ function header() {
           window.scroll(0, 0);
         }}
       >
-        <LiveTvIcon fontSize="large" /> MOVIE-HOUSE
-        <MovieCreationOutlinedIcon fontSize="large" />
+        <LiveTvIcon fontSize="large" style={{ paddingRight: "20px" }} />{" "}
+        MOVIE-HOUSE
+        <MovieCreationOutlinedIcon
+          fontSize="large"
+          style={{ paddingLeft: "20px" }}
+        />
       </span>
     </>
   );
