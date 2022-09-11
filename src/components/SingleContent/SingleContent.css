@@ -11,6 +11,7 @@
 .media:hover{
     background-color: antiquewhite;
     color: black;
+    cursor: pointer;
 }
 @media (max-width:500px){
     .media{
